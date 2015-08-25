@@ -1,0 +1,8 @@
+<div class='gallery'>
+    {{gallery-header}}
+    {{gallery-mainphoto photo=state.selectedPhoto showShare=state.showShare }}
+    <hr/>
+    {{gallery-thumbnails photos=state.photos selectedPhoto=state.selectedPhoto }}
+    <hr/>
+    {{gallery-pager page=state.page }}
+</div>

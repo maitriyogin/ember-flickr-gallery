@@ -1,0 +1,20 @@
+@import "../config/colors"
+
+.thumbnails
+  height: 23em;
+  div
+    float: left;
+    margin: 0.5em;
+    width: 144px;
+    height: 144px;
+    overflow:hidden;
+    border : 2px solid;
+    cursor:pointer;
+  div:hover
+    opacity: 0.7;
+  .start
+    margin-left:0px;
+  .end
+    margin-right:0px;
+  .active
+    border : 2px solid $titleCol

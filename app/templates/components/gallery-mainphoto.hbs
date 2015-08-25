@@ -1,0 +1,19 @@
+<div class='mainPhotoContainer'>
+  <div class='redThing'/>
+  <div class='mainPhoto'>
+      {{gallery-photo photo=photo size='z'}}
+      <div class='navLeft'><a href='#' {{action "goLeft" photo}}> &lt; </a> </div>
+      <div class='navRight'><a href='#' {{action "goRight" photo}}> > </a> </div>
+    
+  </div>
+  {{#if showShare}}
+    <div class='shareBox'></div>
+  {{/if}}
+  <div class='title'>
+      {{photo.title}}
+      
+        <div class='share' {{action "toggleShare" }}>SHARE</div>
+      
+      
+  </div>
+</div>

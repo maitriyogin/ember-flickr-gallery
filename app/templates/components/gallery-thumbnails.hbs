@@ -1,0 +1,7 @@
+<div class='thumbnails'>
+    {{#each dphotos as |photo|}}
+      {{gallery-photo photo=photo size=size key=photo.id count=photo.count rowcount=photo.rowcount active=photo.active}}
+    {{else}}
+      There are no photos to show!
+    {{/each}}
+</div>

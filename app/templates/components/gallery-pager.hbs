@@ -1,0 +1,10 @@
+<div/>
+<div class='pager'>
+    <a href='#' {{action "pageStart" page}}> &lt;&lt; </a>
+    <a href='#' {{action "pageLeft" page}}> &lt; </a>
+    {{#each pages as |styleIndex|}}
+      <a href='#' className=styleIndex.style {{action "page" page styleIndex.index}}   role='goToPage'> {{styleIndex.index}} </a>
+    {{/each}}
+    <a href='#' {{action "pageRight" page}}> > </a>
+    <a href='#' {{action "pageEnd" page}}> >> </a>
+</div>

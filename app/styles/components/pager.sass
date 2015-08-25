@@ -1,0 +1,21 @@
+@import "../config/colors"
+
+.pagerContainer
+  position: relative;
+  display : block;
+  background: $galleryBackgroundCol;
+  clear:left;
+  height :1.5em;
+  .pager
+    right :0px;
+    position: absolute;
+    display:block;
+    a
+      text-decoration: none;
+      color: white;
+    a:hover
+      color: $titleCol;
+    a:active
+  	  color: $titleCol;
+    .active
+      color: $titleCol;

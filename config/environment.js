@@ -16,7 +16,13 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
+    contentSecurityPolicy: { 'default-src': "'none' 'self'",
+    'script-src': "'self' 'localhost' 'unsafe-inline' 'unsafe-eval' https://api.flickr.com", 
+    'font-src': "'self'", 
+    'connect-src': "'self' 'localhost'", 
+    'style-src': "'self' 'unsafe-inline'",
+    'img-src': "'self' http://farm1.staticflickr.com http://farm2.staticflickr.com http://farm3.staticflickr.com http://farm4.staticflickr.com" }
   };
 
   if (environment === 'development') {

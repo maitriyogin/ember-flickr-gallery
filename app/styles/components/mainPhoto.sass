@@ -1,0 +1,88 @@
+@import "../config/colors"
+
+.mainPhotoContainer
+  position:relative;
+  .title 
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 1em;
+    color:white;
+    text-align:center;
+    padding-top:0.8em;
+    position:relative;
+    width:100%
+    .share
+      position:absolute;
+      right:0px;
+      top: 8px;
+      width:4.5em;
+      height: 1.45em;
+      color:$titleCol
+      background-color:$shareBackground
+      font-family: Impact;
+      font-size:1.2em;
+      font-style: normal;
+      font-variant: small-caps;
+      font-weight: 50;
+      padding-top:0.1em;
+      cursor:pointer;
+  .shareBox
+    position: absolute;
+    right:0px;
+    bottom : 1.5em;
+    background-color:$shareBackground;
+    width:190px;
+    height:70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/assets/images/share.png');
+.mainPhoto
+  position: relative;
+  clear: left;
+  width:640px;
+  height:427px;
+  overflow:scroll;
+  img
+    margin: auto;
+    display: block;
+
+  .nav
+  	border-radius: 50%;
+  	font-weight: bold;
+  	font-family: Garamond;
+  	font-size: 2.5em;
+  	background-color:black;
+  	z-index:10;
+  	top:50%;
+  	width:1em;
+  	height:1em;
+  	margin:auto;;
+  	line-height:0.9em;
+  	text-align:center;
+  	opacity: 0.6;
+  	filter: alpha(opacity=80);
+  .nav:hover
+    opacity: 1;
+  .navLeft
+    @extend .nav;
+    position: absolute;
+    left: 5px;;
+  .navRight
+    @extend .nav;
+    position: absolute;
+    right: 5px;
+  a
+    text-decoration: none;
+    color: $navCol;
+  a:hover
+  	color: $titleCol
+
+.redThing
+  background: $shareBackground
+  padding-left : 0px;
+  padding-right :0px;
+  position:absolute;
+  left:-40px;
+  height:50%;
+  width:720px
+    
