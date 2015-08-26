@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   searchString:'',
   actions : {
     filterMe : function(filterText){
+      //this.attrs['filterMe'](filterText);
       this.get('ViewActionCreators').loadPhotos(filterText);
     }
   }

@@ -32,14 +32,15 @@ export default Ember.Component.extend({
     let pages = [];
     let page = this.get('page');
     
-    if(!page) return;
+    if(!page){ 
+      return;
+    }
     
     var [start, end] = pagerHelper.pagePosition(page);
 
     for (let i=start; i<end; i++) {
-        var key = `pageNo-${i}`;
         var style = 'goToPage';
-        style += i==page.page?' active':'';
+        style += i===page.page?' active':'';
         pages.push({style:style, index:i});
     }
     this.set('pages', pages);

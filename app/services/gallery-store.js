@@ -83,12 +83,12 @@ export default Ember.Service.extend({
           	if(action.direction != null){
           		// find element and go back or forward
           		var length = state.photos.length;
-          		if(action.direction == constants.PAGING.LEFT){
+          		if(action.direction === constants.PAGING.LEFT){
           			i--;
           			if(i < 0){
           				i = length -1;
           			}
-          		} else if(action.direction == constants.PAGING.RIGHT){
+          		} else if(action.direction === constants.PAGING.RIGHT){
           			i++;
           			if(i >= length){
           				i = 0;

@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     goRight(photo){
       this.get('ViewActionCreators').selectPhoto(photo, constants.PAGING.RIGHT);
     },
-    toggleShare(photo){
+    toggleShare(){
       this.get('ViewActionCreators').showShare(!this.get('showShare'));
     }
   }
